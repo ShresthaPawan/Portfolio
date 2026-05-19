@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawan Shrestha - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="blob"></div>
+    <div id="blob-blur"></div>
+
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <h2>Welcome to my Portfolio. . .<span class="highlight">.</span></h2>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skill" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HOME SECTION -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data hidden">
+            <!-- <span class="home__subtitle">Welcome to my Portfolio. . .</span> -->
+            <h1 class="home__title">
+              Hi, I'm <br />
+              <span class="highlight">Pawan Shrestha</span>
+            </h1>
+            <h3 class="home__education">CS & IT Undergraduate</h3>
+            <p class="home__description">
+              "I am a Computer Science undergraduate who loves exploring
+              different fields of IT, from programming and database management
+              to cybersecurity. Over time, I’ve worked on projects such as a
+              restaurant management system, where I gained experience in Python,
+              SQL, and system design. I believe technology is not just about
+              coding — it’s about solving problems and making life easier. My
+              journey is still beginning, but I am committed to continuous
+              learning, growth, and building a strong foundation for a career in
+              software development and IT."
+            </p>
+            <div class="home__buttons">
+              <a href="#project" class="button button--flex"
+                >View Projects <i class="fas fa-arrow-right button__icon"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/pawan-shrestha-96682b379"
+                target="_blank"
+                class="button button--ghost button--flex"
+                >Connect on LinkedIn</a
+              >
+            </div>
+          </div>
+          <div class="home__img-wrapper hidden">
+            <div class="home__img-bg"></div>
+            <img
+              src="OwnPhoto.jpeg"
+              alt="Pawan Shrestha"
+              class="home__img"
+              onerror="
+                this.src =
+                  'https://via.placeholder.com/250x300/1e1e24/64ffda?text=Pawan'
+              "
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section class="education section" id="education">
+        <h2 class="section__title hidden">
+          Education <span class="highlight">Background</span>
+        </h2>
+        <div class="education__container container hidden">
+          <div class="table-responsive">
+            <table class="education__table">
+              <thead>
+                <tr>
+                  <th>Institution Name</th>
+                  <th>Completion Year</th>
+                  <th>Percentage/CGPA</th>
+                  <th>Level</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>North Point Academy</td>
+                  <td>2021</td>
+                  <td>3.90</td>
+                  <td>Secondary Education Examination (SEE)</td>
+                  <td>Manameiju, New Buspark</td>
+                </tr>
+                <tr>
+                  <td>Xavier International College</td>
+                  <td>2023</td>
+                  <td>3.17</td>
+                  <td>Higher Secondary Education</td>
+                  <td>Kalopul, Chabahil</td>
+                </tr>
+                <tr>
+                  <td title="Affiliated to Asian Pacific University">
+                    Techspire College
+                  </td>
+                  <td>Present</td>
+                  <td>--</td>
+                  <td>
+                    Bachelor in Computer Science and Information Technology
+                  </td>
+                  <td>New Baneshwor, Kathmandu</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="skill section" id="skill">
+        <h2 class="section__title hidden">
+          My <span class="highlight">Skills</span>
+        </h2>
+        <div class="skill__container container grid">
+          <!-- Programming Languages -->
+          <div class="skill__card hidden">
+            <div class="skill__header">
+              <i class="fas fa-code skill__icon"></i>
+              <h3 class="skill__title">Programming Languages</h3>
+            </div>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Python
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> JavaScript
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> C Programming
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Java
+              </li>
+            </ul>
+          </div>
+
+          <!-- Database & Storage -->
+          <div class="skill__card hidden">
+            <div class="skill__header">
+              <i class="fas fa-database skill__icon"></i>
+              <h3 class="skill__title">Database & Storage</h3>
+            </div>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> MySQL
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Microsoft Excel
+              </li>
+            </ul>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill__card hidden">
+            <div class="skill__header">
+              <i class="fas fa-globe skill__icon"></i>
+              <h3 class="skill__title">Web Development</h3>
+            </div>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> HTML5
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> CSS3
+              </li>
+            </ul>
+          </div>
+
+          <!-- Language -->
+          <div class="skill__card hidden">
+            <div class="skill__header">
+              <i class="fas fa-language skill__icon"></i>
+              <h3 class="skill__title">Languages</h3>
+            </div>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Nepali (Native)
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> English (Fluent)
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Hindi
+              </li>
+            </ul>
+          </div>
+
+          <!-- Other Skills -->
+          <div class="skill__card hidden">
+            <div class="skill__header">
+              <i class="fas fa-lightbulb skill__icon"></i>
+              <h3 class="skill__title">Other Skills</h3>
+            </div>
+            <ul class="skill__list">
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Problem Solving
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Critical Thinking
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Teamwork
+              </li>
+              <li class="skill__item">
+                <i class="fas fa-check-circle"></i> Time Management
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="project section" id="project">
+        <h2 class="section__title hidden">
+          My <span class="highlight">Projects</span>
+        </h2>
+        <div class="project__container container grid">
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <a
+                href="https://github.com/ShresthaPawan/Portfolio"
+                target="_blank"
+              >
+                <div class="project-card">
+                  <h3 class="project__title">Personal Portfolio Website</h3>
+
+                  <p class="project__description">
+                    Created a responsive website using HTML, CSS, and JavaScript
+                    to showcase my skills, projects, and resume with a premium
+                    dark mode design.
+                  </p>
+                </div>
+              </a>
+              <div class="project__tags">
+                <span class="project__tag">HTML</span>
+                <span class="project__tag">CSS</span>
+                <span class="project__tag">JS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon"><i class="fas fa-utensils"></i></div>
+              <h3 class="project__title">Restaurant Management System</h3>
+              <p class="project__description">
+                Developed a comprehensive system using Python to manage orders,
+                inventory, and billing for a local restaurant, utilizing SQL for
+                database management.
+              </p>
+              <div class="project__tags">
+                <span class="project__tag">Python</span>
+                <span class="project__tag">SQL</span>
+                <span class="project__tag">System Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon"><i class="fas fa-bicycle"></i></div>
+              <h3 class="project__title">Bike Rental Service</h3>
+              <p class="project__description">
+                Developed a bike rental service using Python to show the number
+                of bikes available and calculate total billing based on rental
+                duration.
+              </p>
+              <div class="project__tags">
+                <span class="project__tag">Python</span>
+                <span class="project__tag">Logic Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon"><i class="fas fa-calculator"></i></div>
+              <h3 class="project__title">Advanced Calculator</h3>
+              <p class="project__description">
+                Made a simple calculator which can do several operations like
+                addition, subtraction, multiplication, division, modulus,
+                exponentiation, and floor division.
+              </p>
+              <div class="project__tags">
+                <span class="project__tag">Programming</span>
+                <span class="project__tag">Math</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon"><i class="fas fa-gamepad"></i></div>
+              <h3 class="project__title">Number Guessing Game</h3>
+              <p class="project__description">
+                Created a game using Python random module, where users try to
+                guess the exact number generated by the computer within a
+                certain range.
+              </p>
+              <div class="project__tags">
+                <span class="project__tag">Python</span>
+                <span class="project__tag">Random Module</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card hidden">
+            <div class="project__content">
+              <div class="project__icon"><i class="fas fa-hotel"></i></div>
+              <h3 class="project__title">Hotel Database System</h3>
+              <p class="project__description">
+                Designed a hotel management system database where customers can
+                reserve multiple rooms across multiple locations efficiently.
+              </p>
+              <div class="project__tags">
+                <span class="project__tag">Database</span>
+                <span class="project__tag">SQL</span>
+                <span class="project__tag">Architecture</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title hidden">
+          Get In <span class="highlight">Touch</span>
+        </h2>
+        <div class="contact__container container hidden">
+          <p class="contact__text">
+            Currently looking for new opportunities. Whether you have a question
+            or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <a
+            href="mailto:shresthapawan2024@gmail.com?subject=Portfolio%20Contact&body=Hello%20Pawan,%20I%20am%20reaching%20out%20regarding..."
+            class="button button--flex"
+          >
+            Say Hello <i class="fas fa-paper-plane button__icon"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Pawan.</h1>
+        <ul class="footer__list">
+          <li><a href="#home" class="footer__link">Home</a></li>
+          <li><a href="#education" class="footer__link">Education</a></li>
+          <li><a href="#skill" class="footer__link">Skills</a></li>
+        </ul>
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/share/1JCgW7dzpC/?mibextid=wwXIfr"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://github.com/ShresthaPawan"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <span class="footer__copy">
+          &#169; Pawan Shrestha. All rigths reserved.
+        </span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
